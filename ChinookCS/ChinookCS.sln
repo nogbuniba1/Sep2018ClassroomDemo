@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{0AC4A8FB-429B-4E55-B62D-83BC83A10678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chinook.Data", "Chinook.Data\Chinook.Data.csproj", "{A4E203E1-5A25-462C-99DA-B8285A08CC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookSystem", "ChinookSystem\ChinookSystem.csproj", "{613AE132-BF75-4706-8244-1230E944ED1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AC4A8FB-429B-4E55-B62D-83BC83A10678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC4A8FB-429B-4E55-B62D-83BC83A10678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC4A8FB-429B-4E55-B62D-83BC83A10678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC4A8FB-429B-4E55-B62D-83BC83A10678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E203E1-5A25-462C-99DA-B8285A08CC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E203E1-5A25-462C-99DA-B8285A08CC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E203E1-5A25-462C-99DA-B8285A08CC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E203E1-5A25-462C-99DA-B8285A08CC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613AE132-BF75-4706-8244-1230E944ED1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613AE132-BF75-4706-8244-1230E944ED1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613AE132-BF75-4706-8244-1230E944ED1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613AE132-BF75-4706-8244-1230E944ED1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E2FCA26-E7F9-4E23-84D3-0D1F6F138A3A}
+	EndGlobalSection
+EndGlobal
