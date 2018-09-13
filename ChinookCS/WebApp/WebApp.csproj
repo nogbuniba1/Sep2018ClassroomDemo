@@ -220,6 +220,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="SamplePages\ODSQuery.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -391,6 +392,13 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SamplePages\ODSQuery.aspx.cs">
+      <DependentUpon>ODSQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SamplePages\ODSQuery.aspx.designer.cs">
+      <DependentUpon>ODSQuery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -427,6 +435,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chinook.Data\Chinook.Data.csproj">
+      <Project>{a4e203e1-5a25-462c-99da-b8285a08cc46}</Project>
+      <Name>Chinook.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChinookSystem\ChinookSystem.csproj">
+      <Project>{613ae132-bf75-4706-8244-1230e944ed1d}</Project>
+      <Name>ChinookSystem</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
