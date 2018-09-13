@@ -31,5 +31,10 @@ namespace Chinook.Data.Entities
 
         [StringLength(50, ErrorMessage = "Release label is limited to 50 characters")]
         public string ReleaseLabel { get; set; }
+
+
+        //Navigation Properties 
+        public virtual Artist Artist { get; set; }
+
     }
 }
