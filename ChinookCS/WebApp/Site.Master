@@ -82,7 +82,8 @@
 
                             <%--Dropdown Menu--%>
                             <asp:MenuItem Text="ODS" NavigateUrl="~/">
-                                <asp:MenuItem Text="ODS Query" NavigateUrl="~/SamplePages/ODSQuery.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ODS Query GridView" NavigateUrl="~/SamplePages/ODSQuery.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ODS Query ListView" NavigateUrl="~/SamplePages/QueryListView.aspx"></asp:MenuItem>
                             </asp:MenuItem>
 
                             <asp:MenuItem Text="About" NavigateUrl="~/About.aspx"></asp:MenuItem>
