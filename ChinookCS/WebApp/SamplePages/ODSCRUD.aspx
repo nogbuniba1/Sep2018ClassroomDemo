@@ -215,10 +215,7 @@
         UpdateMethod="Album_Update"
         TypeName="ChinookSystem.BLL.AlbumController" 
         OldValuesParameterFormatString="original_{0}"
-        OnDeleted="CheckForException" 
-        OnInserted="CheckForException" 
-        OnSelected="CheckForException" 
-        OnUpdated="CheckForException">
+        >
     </asp:ObjectDataSource>
 
 
