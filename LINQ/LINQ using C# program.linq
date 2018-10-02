@@ -9,12 +9,12 @@
 
 void Main()
 {
-	//**EXERCISE 1**
+	//**EXERCISE 9**
 	//List all the Playlists which have at least one track. Show the playlist name, no of playlist tracks, the cost of the playlist and the total storage size of the playlist
 	
 	var results9 = from x in Playlists
 					where x.PlaylistTracks.Count() > 0
-					select new PlayListSummary
+					select new PlaylistSummary
 					{
 						name = x.Name,
 						trackcount = x.PlaylistTracks.Count(),
@@ -26,7 +26,7 @@ void Main()
 }
 
 // Define other methods and classes here
-public class PlayListSummary
+public class PlaylistSummary
 {
 	public string name {get; set;}
 	public int trackcount {get; set;}
