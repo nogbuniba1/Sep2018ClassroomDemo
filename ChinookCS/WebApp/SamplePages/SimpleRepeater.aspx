@@ -14,7 +14,7 @@
 
     <asp:Repeater ID="PlaylistSummaryList" runat="server" 
         DataSourceID="PlaylistSummaryListODS" 
-        ItemType="Chinook.Data.Entities.POCOs.PlaylistSummary">
+        ItemType="Chinook.Data.POCOs.PlaylistSummary">
         <HeaderTemplate>
             <h4>Playlist Summary</h4>
             <table class="table" >

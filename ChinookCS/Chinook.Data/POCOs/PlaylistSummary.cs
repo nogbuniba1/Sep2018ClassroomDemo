@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 
 
-namespace Chinook.Data.Entities.POCOs
+namespace Chinook.Data.POCOs
 {
     public class PlaylistSummary
     {

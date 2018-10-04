@@ -50,10 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\AnAlbum.cs" />
+    <Compile Include="DTOs\SupportEmployee.cs" />
     <Compile Include="Entities\Album.cs" />
     <Compile Include="Entities\Artist.cs" />
     <Compile Include="Entities\Customer.cs" />
-    <Compile Include="Entities\DTOs\AnAlbum.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Genre.cs" />
     <Compile Include="Entities\Invoice.cs" />
@@ -61,8 +62,9 @@
     <Compile Include="Entities\MediaType.cs" />
     <Compile Include="Entities\Playlist.cs" />
     <Compile Include="Entities\PlaylistTrack.cs" />
-    <Compile Include="Entities\POCOs\PlaylistSummary.cs" />
-    <Compile Include="Entities\POCOs\Song.cs" />
+    <Compile Include="POCOs\PlayListCustomer.cs" />
+    <Compile Include="POCOs\PlaylistSummary.cs" />
+    <Compile Include="POCOs\Song.cs" />
     <Compile Include="Entities\Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

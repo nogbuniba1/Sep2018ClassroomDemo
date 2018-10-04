@@ -87,6 +87,7 @@
                                 <asp:MenuItem Text="ODS CRUD" NavigateUrl="~/SamplePages/ODSCRUD.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="List View Data Access" NavigateUrl="~/SamplePages/AlbumDetails.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Simple Repeater" NavigateUrl="~/SamplePages/SimpleRepeater.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Nested Repeater" NavigateUrl="~/SamplePages/NestedRepeater.aspx"></asp:MenuItem>
                             </asp:MenuItem>
 
                             <asp:MenuItem Text="About" NavigateUrl="~/About.aspx"></asp:MenuItem>

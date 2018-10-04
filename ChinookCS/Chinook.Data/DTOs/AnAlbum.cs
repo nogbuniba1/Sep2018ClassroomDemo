@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 #region Additional Namespaces
 using Chinook.Data.Entities;
 using System.ComponentModel;
-using Chinook.Data.Entities.POCOs;
+using Chinook.Data.POCOs;
 #endregion
 
 
-namespace Chinook.Data.Entities.DTOs
+namespace Chinook.Data.DTOs
 {
     //AnAlbum is the DTO. It has structure (a set of data on each instance of the class)
     public class AnAlbum
