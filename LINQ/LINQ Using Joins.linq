@@ -1,4 +1,12 @@
-<Query Kind="Expression" />
+<Query Kind="Expression">
+  <Connection>
+    <ID>bda6452f-404d-474e-9916-cf050d5aa1f8</ID>
+    <Persist>true</Persist>
+    <Server>.</Server>
+    <Database>Chinook</Database>
+    <ShowServer>true</ShowServer>
+  </Connection>
+</Query>
 
 //Rules:
 // 1. if you have a navigational property between the tables
