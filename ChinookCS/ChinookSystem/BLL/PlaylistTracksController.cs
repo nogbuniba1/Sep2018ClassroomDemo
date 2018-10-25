@@ -21,10 +21,19 @@ namespace ChinookSystem.BLL
         {
             using (var context = new ChinookContext())
             {
-               
-                //code to go here
+                var results = from x in context.PlaylistTracks
+                              where x.Playlist.UserName.Equals(username) && x.Playlist.Name.Equals(playlistname)
+                              orderby x.TrackNumber
+                              select new UserPlaylistTrack
+                              {
+                                  TrackID = x.TrackId,
+                                  TrackNumber = x.TrackNumber,
+                                  TrackName = x.Track.Name,
+                                  Milliseconds = x.Track.Milliseconds,
+                                  UnitPrice = x.Track.UnitPrice
+                              };
 
-                return null;
+                return results.ToList();
             }
         }//eom
 
@@ -86,7 +95,7 @@ namespace ChinookSystem.BLL
                         //Part Two: Add to track
                         newTrack = new PlaylistTrack();
                         newTrack.TrackId = trackid;
-                        newTrack.TrackId = tracknumber;
+                        newTrack.TrackNumber = tracknumber;
 
                         //What about the PlaylistID?
                         //Note: The PKey for PlaylistID may not yet exists. 
