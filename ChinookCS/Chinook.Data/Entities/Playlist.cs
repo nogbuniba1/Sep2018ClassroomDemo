@@ -11,6 +11,7 @@ namespace Chinook.Data.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Playlist()
         {
+            //The Hash set is part of the reverse engineering. Do NOT remove. It does part of the transaction
             PlaylistTracks = new HashSet<PlaylistTrack>();
         }
 
