@@ -39,6 +39,7 @@ namespace WebApp.Security
             }, adminPassword);
             if (result.Succeeded)
                 userManager.AddToRole(userManager.FindByName(adminUser).Id, adminRole);
+
             //Add a customer 
             string customerUser = ConfigurationManager.AppSettings["customerUserName"];
             string customerRole = ConfigurationManager.AppSettings["customerRole"];

@@ -17,6 +17,24 @@ namespace Jan2018DemoWebsite.SamplePages
         protected void Page_Load(object sender, EventArgs e)
         {
             TracksSelectionList.DataSource = null;
+
+            if (Request.IsAuthenticated)
+            {
+                if (User.IsInRole("Administrators")|| User.IsInRole("Customers"))
+                {
+                    MessageUserControl.ShowInfo("Success", "You may continue");
+                }
+                else
+                {
+                    //redirect to a page that states no authorization for the requested action
+                    Response.Redirect("~/Default.aspx");
+                }
+            }
+            else
+            {
+                //redirect to login page
+                Response.Redirect("~/Account/Login.aspx");
+            }
         }
 
         protected void CheckForException(object sender, ObjectDataSourceStatusEventArgs e)
@@ -89,7 +107,7 @@ namespace Jan2018DemoWebsite.SamplePages
                 string playlistname = PlaylistName.Text;
 
                 //string username = User.Identity.Name;  --Comes from security
-                string username = "HansenB";
+                string username = User.Identity.Name; //"HansenB";
 
                 MessageUserControl.TryRun(() =>
                 {
@@ -296,7 +314,7 @@ namespace Jan2018DemoWebsite.SamplePages
                 string playlistname = PlaylistName.Text;
 
                 //string username = User.Identity.Name;  --Comes from security
-                string username = "HansenB";
+                string username =  "HansenB";
 
                 //Obtain the trackID from the ListView
                 //CommandArgument is an object
