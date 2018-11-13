@@ -1,7 +1,6 @@
 <Query Kind="Statements">
   <Connection>
     <ID>94b300ef-a0e3-45c7-ae6f-0027f4bb745e</ID>
-    <Persist>true</Persist>
     <Server>.</Server>
     <Database>Chinook</Database>
   </Connection>
@@ -134,7 +133,7 @@ var results8 = from x in Albums
 					artist = x.Artist.Name,
 //					numberoftracks = (from y in x.Tracks 
 //										select y).Count(),
-					methonumberoftracks = x.Tracks.Count(),
+					methodnumberoftracks = x.Tracks.Count(),
 					
 					cost = x.Tracks.Sum(y => y.UnitPrice),
 					longest = x.Tracks.Max(y => y.Milliseconds),
@@ -158,45 +157,3 @@ var results9 = from x in Playlists
 				};
 
 results9.Dump();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

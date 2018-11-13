@@ -1,7 +1,6 @@
 <Query Kind="Expression">
   <Connection>
     <ID>94b300ef-a0e3-45c7-ae6f-0027f4bb745e</ID>
-    <Persist>true</Persist>
     <Server>.</Server>
     <Database>Chinook</Database>
   </Connection>
@@ -38,7 +37,7 @@ select new
 	
 
 //EXAMPLE 2: Grouping of Tracks by Genre namefrom 2010
-//Actions against your data BEFORE grouping is done again the natural entity attribute
+//Actions against your data BEFORE grouping is done against the natural entity attribute
 //Actions done after grouping MUST refer to the temporary dataset group
 
 //In this example, grouping can be done against a complete Entity. This type of groupin produces a KEY set of ALL Entity Attributes
@@ -79,3 +78,9 @@ select new
 			}
 			
 		}
+		
+		
+		
+		
+		
+		
