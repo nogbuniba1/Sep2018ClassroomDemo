@@ -39,7 +39,7 @@ namespace ChinookSystem.BLL
 
         //This method is an OLTP complex method
         //This method may alter multiple tracaks
-        //This method requires the design to properly deisgn a solution BEFORE attempting to code
+        //This method requires the design to properly design a solution BEFORE attempting to code
         public void Add_TrackToPLaylist(string playlistname, string username, int trackid)
         {
             //The using sets up the transaction environment. If the logic does not reach a.SaveChanges method, all work is rolled back
